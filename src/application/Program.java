@@ -14,6 +14,7 @@ public class Program {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
 		System.out.println("==== Test 1: Seller Find By ID ====");
@@ -47,6 +48,7 @@ public class Program {
 		Seller newSeller = new Seller(null, "Greg", "Greg@gmail.com", new Date(), 1000.0, dep);
 		
 		sellerDao.insert(newSeller);
+		
 		System.out.println("Inserted: New Id = " + newSeller.toString());
 		
 		System.out.print("\n");
